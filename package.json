@@ -1,16 +1,16 @@
 {
-  "name": "project_uber",
+  "name": "project_pulse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Study Project ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandra-fm/project_ber.git"
+    "url": "git+https://github.com/alexandra-fm/project_Pulse.git"
   },
-  "author": "",
+  "author": "alexandra-fm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alexandra-fm/project_ber/issues"
@@ -26,5 +26,11 @@
   },
   "dependencies": {
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
