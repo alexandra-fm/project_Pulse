@@ -1,4 +1,5 @@
 .overlay {
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,11 +9,15 @@
 .modal {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 380px;
     min-height: 400px;
     background-color: #f2f2f2;
-    padding: 38px 40px 40px 40px;
+    padding: 40px;
+    &_mini {
+        min-height: 140px;
+    }
     &__close {
         position: absolute;
         top: 0;
@@ -20,6 +25,24 @@
         font-size: 41px;
         line-height: 21px;
         color: $main-color;
+        cursor: pointer;
     }
-
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        color: $second-color;
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        color: $second-color;
+        text-align: center;
+    }
+}
+#order, #consultation, #thanks {
+    display: none;
 }
