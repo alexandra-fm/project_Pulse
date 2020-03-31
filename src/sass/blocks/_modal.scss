@@ -42,7 +42,23 @@
         color: $second-color;
         text-align: center;
     }
+    .error {
+        border: 1px solid $main-color;
+        color: $second-color;
+        &:focus {
+            outline:none;
+            border-color: #2b79b4;
+        }
+    }
+    label.error {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        border: none;
+        margin-bottom: 15px;
+    }
 }
 #order, #consultation, #thanks {
     display: none;
 }
+
