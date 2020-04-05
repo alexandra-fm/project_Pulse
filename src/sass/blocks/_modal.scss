@@ -62,3 +62,41 @@
     display: none;
 }
 
+@media (max-width: 545px) {
+    .modal {
+        width: 320px;
+        min-height: 400px;
+        padding: 20px;
+        &__subtitle {
+            font-size: 15px;
+            line-height: 15px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .modal {
+        width: 285px;
+        min-height: 200px;
+        &__close {
+            top: 15px;
+            right: 0;
+            left: 92%;
+            font-size: 30px;
+            line-height: 0;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: normal;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+}
+

@@ -4,8 +4,12 @@
     align-items: center;
     &__logo {
         width: 250px;
-        img {
+        &_main {
             width: 100%;
+        }
+        &_mini {
+            width: 100%;
+            display: none;
         }
     }
     &__official {
@@ -33,5 +37,58 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+}
+
+@media (max-width: 770px) {
+    .header {
+        &__logo {
+            width: 180px;
+        }
+        &__official {
+            margin: 0 10px;
+            span {
+                display: block;
+                font-size: 12px;
+
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .header {
+        &__official {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 450px) {
+
+}
+
+@media (max-width: 321px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            width: 125px;
+            &_mini {
+                width: 100%;
+                display: block;
+            }
+            &_main {
+                display: none;
+            }
+        }
+        &__phone {
+            font-size: 12px;
+        }
     }
 }

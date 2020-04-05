@@ -28,3 +28,93 @@
         }
     }
 }
+
+@media (max-width: 1100px) {
+    .carousel {
+        max-width: 720px;
+        margin: 0 auto;
+        img {
+            max-width: 620px;
+        }
+        .prev, .next {
+            left: -35px;
+        }
+        .next {
+            right: -35px;
+            left: auto;
+        }
+    }
+}
+@media (max-width: 871px) {
+    .carousel {
+        max-width: 670px;
+        margin: 0 auto;
+        img {
+            max-width: 500px;
+        }
+        .prev, .next {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+            left: auto;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .carousel {
+        img {
+            max-width: 390px;
+        }
+        .prev, .next {
+            img {
+                width: 28px;
+                height: 45px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 545px) {
+    .carousel {
+        img {
+            max-width: 320px;
+        }
+        .prev, .next {
+            left: -5px;
+            img {
+                width: 25px;
+                height: 40px;
+            }
+        }
+        .next {
+            right: -5px;
+            left: auto;
+        }
+    }
+}
+
+
+@media (max-width: 321px)  {
+    .carousel {
+        padding: 45px 0 80px 0;
+        img {
+            max-width: 275px;
+        }
+        .prev, .next {
+            top: 100%;
+            left: 50px;
+            bottom: 8px;
+            img {
+                width: 21px;
+                height: 35px;
+            }
+        }
+        .next {
+            right: 50px;
+            left: auto;
+        }
+    }
+}
